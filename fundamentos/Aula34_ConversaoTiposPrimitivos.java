@@ -31,8 +31,8 @@ Or it can be (made)/(done) by casting that is when you put the wanted typy befor
 			System.out.println(b);
 			
 			int c = 4;
-			byte d = (byte)c; /*This is an explicit conversion that the user need to do. But is 4 greater than the maximum
-			 			 	     value of the byte variable? -> No! It's way lesser than this, but the Java don't analyze
+			byte d = (byte)c; /*This is an explicit conversion that the user need to do. But it is 4 greater than the maximum
+			 			 	     range of the byte variable? -> No! It's way lesser than this, but the Java don't analyze
 			 				    the values/numbers... he analyzes the type, and the byte type is lesser than the int type,
 			 				    so the user must do the explicit conversion*/
 			System.out.println(d);
@@ -48,15 +48,11 @@ Or it can be (made)/(done) by casting that is when you put the wanted typy befor
 										byte-> min value: -128 || max value: 127
 										
 										c= 128 -> 127+1, so the variable did its full count and add one (= +1), so it
-										returned to it minimal value ==> -128
-										
-										c = 130 -> 127 + 3, so the variable did its full count and add three (= +3), so
-										it returned to it minimal value plus 2 ==> -126
-										
-										
-									*/
-			
-			
+										returned to it minimal value ==> -128*/
+			c = 130;
+			d = (byte)c;
+			System.out.println(d); /*	c = 130 -> 127 + 3, so the variable did its full count and add three (= +3), so
+										it returned to it minimal value plus 2 ==> -126 */		
 			
 	}
 }

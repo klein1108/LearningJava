@@ -33,5 +33,6 @@ public class Aula29_Console {
 		System.out.printf("Seu nome é %s %s e voce tem %d anos",nome,sobrenome,idade);
 		entrada.close();									//closing the scanner because we don't need it anymore.
 		
+		
 	}
 }
